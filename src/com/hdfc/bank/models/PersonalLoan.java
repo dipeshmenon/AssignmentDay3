@@ -29,6 +29,7 @@ public class PersonalLoan extends Loan{
 
     public void printDetails(){
         super.printDetails();
+        System.out.println("Type: Personal Loan");
         System.out.println("Purpose: " +purpose);
     }
 }

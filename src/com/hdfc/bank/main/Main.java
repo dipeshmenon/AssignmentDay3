@@ -16,20 +16,21 @@ public class Main {
         HomeLoan hl = new HomeLoan(102,"Deepesh",150000,"123 Road, ABC Colony");
 
 
-        Loan[] loansArray = { pl, hl };
-        System.out.println("Loans in the array:");
-        for (Loan loan : loansArray) {
-            System.out.println(loan);
-        }
+ //       Loan[] loansArray = { pl, hl };
+//        System.out.println("Loans in the array:");
+//        for (Loan loan : loansArray) {
+//            System.out.println(loan);
+//        }
 
-        hl.applyInsurance();
-        hl.applyInsurance(102);
+
 
         LoanUtils util = new LoanUtils();
         util.printEMIDetails(pl);
         pl.calculateEMI();
         util.printEMIDetails(hl);
         hl.calculateEMI();
+        hl.applyInsurance();
+        hl.applyInsurance(102);
 
     }
 }

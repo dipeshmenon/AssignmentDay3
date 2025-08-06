@@ -31,6 +31,7 @@ public class HomeLoan extends Loan{
 
     public void printDetails(){
         super.printDetails();
+        System.out.println("Type: Home Loan");
         System.out.println("Address: "+propertyAddress);
 
     }
@@ -40,6 +41,6 @@ public class HomeLoan extends Loan{
     }
     public void applyInsurance(int loanId){
         double insuranceamt = (getLoanAmount()+(0.8*12));
-        System.out.println("Insurance amount for the loan ID would be: " +insuranceamt);
+        System.out.println("Insurance amount for the loan ID" +getLoanId()+" be: " +insuranceamt);
     }
 }
